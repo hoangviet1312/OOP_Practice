@@ -18,18 +18,24 @@ public class RectangleDraw {
         this.height = height;
     }
 
-    public double getWidth() { return width; }
+    public double getWidth() {
+        return width;
+    }
 
     public void setWidth(double width) {
         this.width = width;
     }
 
     public double getArea() {
-        return this.width * this.height;
+        double area = this.width * this.height;
+        System.out.println("Dien tich cua hinh chu nhat la: " + area);
+        return area;
     }
 
     public double getPerimeter() {
-        return (this.height + this.width) * 2;
+        double perimeter = (this.height + this.width) * 2;
+        System.out.println("Chu vi cua hinh chu nhat la: " + perimeter);
+        return perimeter;
     }
 }
 
